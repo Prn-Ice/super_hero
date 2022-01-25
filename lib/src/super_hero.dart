@@ -2,13 +2,14 @@ library super_hero;
 
 import 'dart:math';
 
-import 'super_heroes.dart';
+import 'package:super_hero/src/super_heroes.dart';
 
+// ignore: public_member_api_docs
 class SuperHero {
-  /// Get a random supher-hero name.
+  /// Get a random super-hero name.
   static String random() {
-    int numberOfSuperheroes = superheroes.length;
-    int randomNumber = Random().nextInt(numberOfSuperheroes);
+    final numberOfSuperheroes = superheroes.length;
+    final randomNumber = Random().nextInt(numberOfSuperheroes);
     return superheroes[randomNumber];
   }
 }
